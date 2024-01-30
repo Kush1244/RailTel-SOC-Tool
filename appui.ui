@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QDialog" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>644</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#FF9B9B;
+</string>
+  </property>
+  <widget class="QLabel" name="tool_name">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>861</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#A7EDE7;
+border-style:outset;
+border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string>                                                                         RailTel SOC End Point Security Assesment Application</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="virustotal_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>620</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:#91C8E4;
+	color:black;
+	border-style:outset;
+	border-width:2px;
+border-color:transparent;
+}
+QPushButton:hover {
+    background-color: #DBC4F0;
+	border-style:outset;
+	border-color:#98EECC;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Virus Total</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="networking_btn">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>620</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:#91C8E4;
+	color:black;
+	border-style:outset;
+	border-width:2px;
+border-color:transparent;
+}
+QPushButton:hover {
+    background-color: #DBC4F0;
+	border-style:outset;
+	border-color:#98EECC;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Networking</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="system_monitoring_btn">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>620</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:#91C8E4;
+	color:black;
+	border-style:outset;
+	border-width:2px;
+border-color:transparent;
+}
+QPushButton:hover {
+    background-color: #DBC4F0;
+	border-style:outset;
+	border-color:#98EECC;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>System</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="submit_report_btn">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>620</y>
+     <width>241</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:#91C8E4;
+	color:black;
+	border-style:outset;
+	border-width:2px;
+border-color:transparent;
+}
+QPushButton:hover {
+    background-color: #DBC4F0;
+	border-style:outset;
+	border-color:#98EECC;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Submit Report</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>861</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#749BC2;
+border-radius:10px;
+border-color:black;</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="virustotal">
+    <property name="styleSheet">
+     <string notr="true">border-radius:5px;</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>0</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Virus Total</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="scan_virustotal_btn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>510</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Virus Total Scan Response</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="system_administration">
+    <property name="styleSheet">
+     <string notr="true">border-radius:5px;</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>0</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color:#FAF0D7;
+border-width:2px;</string>
+     </property>
+     <property name="text">
+      <string>System Administration</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="process_monitor_frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>241</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+                background-color: lightgreen;
+                border-radius:5px;;
+            }
+QFrame:hover {
+                background-color: #EBE645;
+				 
+            }</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="admin_processes_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Admin Token Processes</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="programs_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Programs</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="scheduled_task_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Scheduled Task</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start_at_boot_processes">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Processes Start At Boot</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="autoexec_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Automatically Executed Exe</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="running_process_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>290</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Show All running Processes</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="processes_monitoring_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Processes Monitoring Space</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="security_monitor_frame">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>160</y>
+       <width>251</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+                background-color: lightgreen;
+                border-radius:5px;;
+            }
+QFrame:hover {
+                background-color: #EBE645;
+				 
+            }</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="security_monitor_label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Security Monitor</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="run_mrt_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>MRT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="run_taskmanager_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Task Manager</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="file_monitor_frame">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>160</y>
+       <width>251</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+                background-color: lightgreen;
+                border-radius:5px;;
+            }
+QFrame:hover {
+                background-color: #EBE645;
+				 
+            }</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="file_monitor_label">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>10</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>File Monitor</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="networking">
+    <property name="styleSheet">
+     <string notr="true">border-radius:5px;</string>
+    </property>
+    <widget class="QLabel" name="networking_label">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>10</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:green;</string>
+     </property>
+     <property name="text">
+      <string>NETWORKING</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="listening_processes_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Listening Processes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dns_cache_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>123</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#CCEEBC;
+	color:black;
+	border-radius: 5px;
+	border-width:2px;
+}
+QPushButton:hover {
+    background-color: #FF9B9B;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>DNS Cache</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
