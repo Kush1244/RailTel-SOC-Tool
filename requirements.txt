@@ -1,0 +1,5 @@
+osquery
+pyqt5
+ttkbootstrap
+customtkinter
+pyuac
