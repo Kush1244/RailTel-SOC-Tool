@@ -14,9 +14,7 @@ class virustotal_threaded:
         self.headers = {
             "content-type": "application/json",
             #'Authorization': 'Bearer{0}'.format(api_token)
-            # "X-APIKey": "aa6f55ec9213f4825fe39dafd242b1e5501d60065523de1a38cbe9b7f6ab20f4",  # kushaagraverma@gmail.com
-            "X-APIKey": "84206c5ecd36cfac5c3a08c4232d113c366a9185a07f429e526eb0e08e92c61a",  # kushagra_verma_btech_2024@gsv.ac.in
-            # "X-APIKey": "a25d081d5c661aa54f6041452cfebc7179dfcf67d9aa5d6a1beb52d44e95a937",  # Shekhar Gangal
+            "X-APIKey": "84206c5ecd36cfac5c3a34234sdfskdfhj232d113c366a9185a07f429e526eb0e08e92c61a"  
         }
         self.hash = self.row_data
         self.response_received = list()
